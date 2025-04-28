@@ -1,12 +1,14 @@
-**/.terraform
-# .tfstate files
-*.tfstate
-*.tfstate.*
-*.plan
-.DS_Store
-.history
-.vscode/
+# Don't store TF things
+.terraform/**
+.terraform.lock**
+terraform.tfstate**
+terraform.tfvars
+
+# Environments
 .env
-.ssh
-**/node_modules/
-.terraform.lock.hcl
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
